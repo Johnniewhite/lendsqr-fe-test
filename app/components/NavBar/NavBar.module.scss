@@ -1,0 +1,93 @@
+.navBar {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  background: #fff;
+  box-shadow: 3px 0px 20px 0px rgba(0, 0, 0, 0.04);
+}
+
+.navElement {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.searchElement {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  border: 1.5px solid rgba(84, 95, 125, 0.15);
+  background: #fff;
+}
+
+.searchInput {
+  border: none;
+  padding: 8px;
+  width: 100%;
+  border-radius: 8px;
+  outline: none;
+}
+.searchButtonDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #39cdcc;
+  border-radius: 1px 8px 8px 1px;
+  width: 40px;
+  height: 40px;
+}
+
+.searchButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.secondPart {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  .profilePhoto {
+    margin-left: 10px;
+    margin: 2px;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    border: 1px solid transparent;
+    border-radius: 100px;
+  }
+}
+
+.userName {
+    margin-right: 10px;
+  color: #213f7d;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.docs {
+  margin-right: 2rem;
+  color: #213f7d;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.notification {
+    margin-right: 2rem;
+}
