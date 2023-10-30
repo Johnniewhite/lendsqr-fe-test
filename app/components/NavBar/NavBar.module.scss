@@ -1,3 +1,4 @@
+/* Navbar Styles */
 .navBar {
   display: flex;
   padding: 1rem;
@@ -36,6 +37,7 @@
   border-radius: 8px;
   outline: none;
 }
+
 .searchButtonDiv {
   display: flex;
   justify-content: center;
@@ -56,6 +58,7 @@
   display: flex;
   align-items: center;
   margin-left: auto;
+
   .profilePhoto {
     margin-left: 10px;
     margin: 2px;
@@ -65,29 +68,55 @@
     border: 1px solid transparent;
     border-radius: 100px;
   }
-}
 
-.userName {
+  .userName {
     margin-right: 10px;
-  color: #213f7d;
-  font-family: Work Sans;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
+    color: #213f7d;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
 
-.docs {
-  margin-right: 2rem;
-  color: #213f7d;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-decoration-line: underline;
-}
-
-.notification {
+  .docs {
     margin-right: 2rem;
+    color: #213f7d;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+  }
+
+  .notification {
+    margin-right: 2rem;
+  }
+}
+
+/* Hamburger icon styles */
+.hamburger {
+  display: none; /* Hidden by default */
+  cursor: pointer;
+  padding: 10px;
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #213f7d;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+}
+
+/* Media query for small screens (e.g., mobile) */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* Show the hamburger icon */
+  }
+
+  .navElement {
+    flex-direction: column; /* Change flex direction to stack elements vertically */
+  }
 }
